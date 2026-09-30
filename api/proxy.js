@@ -106,7 +106,7 @@ async function getChecklist(customerId, q) {
   if (q.search) {
     const s = q.search.toLowerCase();
     cards = cards.filter(
-      (c) => c.name.toLowerCase().includes(s) || c.number.toLowerCase().includes(s)
+      (c) => c.name.toLowerCase().includes(s) || c.number.toLowerCase().includes(s) || (c.artist || "").toLowerCase().includes(s)
     );
   }
 
