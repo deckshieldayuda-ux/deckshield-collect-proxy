@@ -1,0 +1,6 @@
+node_modules/
+.vercel
+pagina_collect_v1.html
+pagina_collect_v3.html
+inject_script.txt
+inject_style.txt
